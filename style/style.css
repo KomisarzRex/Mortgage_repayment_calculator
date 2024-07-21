@@ -1,11 +1,13 @@
 @font-face {
-    font-family: 'PlusJakartaSans-b'; /* Name your font family */
-    src: url('./assets/fonts/static/PlusJakartaSans-Bold.ttf'); /* Locate the .ttf file within your directory*/
-  }
-  @font-face {
-    font-family: 'PlusJakartaSans-m'; /* Name your font family */
-    src: url('./assets/fonts/static/PlusJakartaSans-Medium.ttf'); /* Locate the .ttf file within your directory*/
-  }
+  font-family: 'PlusJakartaSans-b'; /* Name your font family */
+  src: url('./assets/fonts/static/PlusJakartaSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans-m'; /* Name your font family */
+  src: url('./assets/fonts/static/PlusJakartaSans-Medium.ttf');
+}
+
 /* CSS Reset */
 * {
     margin: 0;

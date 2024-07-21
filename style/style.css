@@ -187,10 +187,7 @@ button {
     .tempBox>img{
       width: 190px;
     }
-    .tempBox{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .align-ic{
       align-items: center;
     }
     .empty-header{

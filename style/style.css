@@ -1,0 +1,439 @@
+@font-face {
+    font-family: 'PlusJakartaSans-b'; /* Name your font family */
+    src: url('/assets/fonts/static/PlusJakartaSans-Bold.ttf'); /* Locate the .ttf file within your directory*/
+  }
+  @font-face {
+    font-family: 'PlusJakartaSans-m'; /* Name your font family */
+    src: url('/assets/fonts/static/PlusJakartaSans-Medium.ttf'); /* Locate the .ttf file within your directory*/
+  }
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+/* CSS Reset */
+
+
+    body{
+      font-family: 'plusJakartaSans-b', sans-serif;
+      font-size: 16px;
+    }
+    main{
+        
+        display: flex;
+        flex-direction: column;
+        position: static;
+        transform: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .hidden{
+      display: none;
+    }
+    .error{
+      font-family: 'plusJakartaSans-m', sans-serif;
+      color: hsl(4, 69%, 50%);
+      font-size: 0.8rem;
+      
+    }
+    .reset{
+      font-family: 'plusJakartaSans-b', sans-serif;
+      color:hsl(200, 26%, 54%);
+      padding: 0;
+      width: 50px;
+      background-color: hsla(0, 0%, 100%, 0);
+      text-decoration: underline;
+      border:none ;
+  }
+    .leftWing>form{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin:30px;
+        gap: 20px;
+    }
+    form>div>label,form>div>span,form>div>div>label{
+      color: hsl(200, 26%, 54%);
+    }
+    .box{
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .visual-element, .visual-element-rev{
+      border-radius: 6px 6px 6px 6px;
+      display: flex;
+      width: auto;
+      border: solid 1px hsl(200, 24%, 40%);
+    }
+    .mark{
+      border-radius: 5px 0 0 5px;
+      cursor: default;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      color:hsl(200, 24%, 40%);
+      background-color: hsl(202, 86%, 94%);
+    }
+    .visual-element>input{
+      font-family: 'plusJakartaSans-b', sans-serif;
+      font-size: 1.2rem;
+      padding-left: 17px;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      width: 100%;
+    }
+    .mark-rev{
+      border-radius: 0 5px 5px 0;
+      cursor: default;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      color: hsl(200, 24%, 40%);
+      background-color: hsl(202, 86%, 94%);
+    }
+    .visual-element-rev>input{
+      font-family: 'plusJakartaSans-b', sans-serif;
+      font-size: 1.2rem;
+      padding-left: 17px;
+      border-radius: 5px 0 0 5px;
+      border: none;
+      width: 100%;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input:focus{
+      outline: none;
+    }
+    .flex-c{
+      display: flex;
+      flex-direction: column;
+    }
+    .flex-r{
+      display: flex;
+      flex-direction: row;
+    }
+    .gap10{
+      gap: 10px;
+    }
+    .type{
+        display: flex;
+        flex-direction: column;
+    }
+    .type-select{
+        border: solid 1px hsl(200, 24%, 40%);
+        cursor: default;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px;
+        gap: 3px;
+        display: flex;
+        align-items: center;
+        transition: 0.4s;
+    }
+    .selected{
+        transition: 0.4s;
+        border: solid 1px hsl(61, 70%, 52%);
+        background-color: hsl(61, 70%, 52%, 0.308);
+    }
+    .submitBTN{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-family: 'plusJakartaSans-b', sans-serif;
+      width: 100%;
+      padding: 12px;
+      border-radius: 50px;
+      background-color: hsl(61, 70%, 52%);
+      border: none;
+    }
+    .rightWing{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: hsl(201, 30%, 22%);
+      align-items: center;
+      padding: 30px;
+    }
+    .rightWing>img{
+      width: 190px;
+    }
+    .empty-header{
+      font-size: 1.4rem;
+    }
+    .empty-desc{
+      font-size: 1rem;
+      text-align: center;
+    }
+    .white{
+      color: hsl(0, 0%, 100%);
+    }
+    .gray{
+      color: hsl(203, 41%, 72%);
+    }
+    .result-header{
+      font-size: 1.6rem;
+    }
+    .result-desc{
+      font-size: 1rem;
+    }
+    .result-lime{
+      color: hsl(61, 70%, 52%);
+    }
+    .result-box{
+      width: 100%;
+      padding: 15px;
+      border-top:solid hsl(61, 70%, 52%);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: hsl(202, 55%, 16%);
+    }
+    .monthly{
+      font-size: 1rem;
+    }
+    .monthlyMoney{
+      font-size: 1.8rem;
+    }
+    .padding-b10{
+      padding-bottom: 10px;
+    }
+    .underline{
+      border-bottom: solid 1px hsl(200, 24%, 40%);
+    }
+    .result-white{
+      color: hsl(0, 0%, 100%);
+      font-size: 1.4rem;
+    }
+  
+  
+  /* Tabletowe */
+  @media (min-width: 426px) and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+  }
+  .tempBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    
+  }
+  .tempBox>img{
+    width: 150px;
+  
+  }
+  }
+  
+  /* Desktop */
+  @media (min-width: 769px) and (max-width: 1440px) {
+    body {
+      font-size: 18px;
+      background-color: hsl(202, 86%, 94%);
+    }
+    main{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      width: 80%;
+      background-color: hsl(0, 0%, 100%);
+    }
+    h1{
+      font-size: 1.9rem;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .reset{
+      font-size: 1.1rem;
+      width: 90px;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      width: 100%;
+  }
+  .leftWing {
+      display: flex;
+      min-height: 700px;
+      width: 50%;
+      padding: 30px;
+      box-sizing: border-box;
+  }
+  .monthlyMoney{
+    font-size: 2.5rem;
+  }
+
+  .leftWing>form{
+    flex: 1;
+    
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .rightWing {
+      width: 50%;
+      min-height: 700px;
+      background-color: hsl(201, 30%, 22%);
+      align-items: center;
+      gap: 80px;
+      padding: 60px;
+      border-radius: 0 20px 20px 80px;
+      box-sizing: border-box;
+  }
+  .rightWing>.tempBox{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightWing>div{
+      width: 100%;
+  }
+  .submitBTN {
+      gap: 15px;
+      font-size: 1.2rem;
+  }
+  .result-box{
+    
+    padding: 40px;
+    gap: 20px;
+  }
+  .result-box>div{
+    flex:1;
+    gap: 10px;
+    padding: 20px;
+  }
+  }
+  /* Bigscreens */
+  @media (min-width: 1045px) {
+    body {
+      font-size: 20px;
+      background-color: hsl(202, 86%, 94%);
+    }
+    main{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      width: 60%;
+      background-color: hsl(0, 0%, 100%);
+    }
+    h1{
+      font-size: 1.9rem;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .reset{
+      font-size: 1.1rem;
+      width: 90px;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      width: 100%;
+  }
+  .leftWing {
+      display: flex;
+      min-height: 700px;
+      width: 50%;
+      padding: 30px;
+      box-sizing: border-box;
+  }
+  .monthlyMoney{
+    font-size: 2.5rem;
+  }
+
+  .leftWing>form{
+    flex: 1;
+    
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .rightWing {
+      width: 50%;
+      min-height: 700px;
+      background-color: hsl(201, 30%, 22%);
+      align-items: center;
+      gap: 80px;
+      padding: 60px;
+      border-radius: 0 20px 20px 80px;
+      box-sizing: border-box;
+  }
+  .rightWing>.tempBox{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightWing>div{
+      width: 100%;
+  }
+  .submitBTN {
+      gap: 15px;
+      font-size: 1.2rem;
+  }
+  .result-box{
+    
+    padding: 40px;
+    gap: 20px;
+  }
+  .result-box>div{
+    flex:1;
+    gap: 10px;
+    padding: 20px;
+  }
+  }
+      
+

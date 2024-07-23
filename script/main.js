@@ -84,12 +84,12 @@ document.getElementById('Mortgage-Amount').addEventListener('blur', function() {
 
 document.getElementById('term').addEventListener('focus', function() {
   document.getElementById('BOX-term').classList.add('active');
-  document.querySelector('.mark-rev').classList.add('mark-active');
+  document.getElementById('BOX-term').querySelector('.mark-rev').classList.add('mark-active');
 });
 
 document.getElementById('term').addEventListener('blur', function() {
   document.getElementById('BOX-term').classList.remove('active');
-  document.querySelector('.mark-rev').classList.remove('mark-active');
+  document.getElementById('BOX-term').querySelector('.mark-rev').classList.remove('mark-active');
 });
 
 document.getElementById('intere').addEventListener('focus', function() {

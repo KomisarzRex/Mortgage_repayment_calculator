@@ -126,10 +126,11 @@ button {
     }
     .active {
       border-color: hsl(61, 70%, 52%); 
+      transition: 0.4s;
     }
-    
     .mark-active {
       background-color: hsl(61, 70%, 52%); 
+      transition: 0.4s;
     }
     .container{
       display: flex;
@@ -185,8 +186,10 @@ button {
       border-radius: 50px;
       background-color: hsl(61, 70%, 52%);
       border: none;
+      transition: 0.4s;
     }
     .submitBTN:hover{
+      transition: 0.4s;
       background-color: hsla(61, 70%, 52%, 0.692);
     }
     .rightWing{

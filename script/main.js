@@ -101,14 +101,6 @@ document.getElementById('intere').addEventListener('blur', function() {
   document.getElementById('BOX-intere').classList.remove('active');
   document.querySelector('.mark-rev').classList.remove('mark-active');
 });
-
-document.getElementsByName('type').addEventListener('mouseover', function() {
-  document.getElementById('type-select').classList.add('active');
-});
-
-document.getElementById('type').addEventListener('mouseout', function() {
-  document.getElementById('type-select').classList.remove('active');
-});
 //focus inputs
 document.getElementById('submitBTN').addEventListener('click', (event) => {
   let valid = true;

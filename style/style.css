@@ -124,6 +124,13 @@ button {
       border: none;
       width: 100%;
     }
+    .active {
+      border-color: hsl(61, 70%, 52%); 
+    }
+    
+    .mark-active {
+      background-color: hsl(61, 70%, 52%); 
+    }
     .container{
       display: flex;
       flex-direction: column;
@@ -158,6 +165,10 @@ button {
         align-items: center;
         transition: 0.4s;
     }
+    .type-select:hover{
+        transition: 0.4s;
+        border: solid 1px hsl(61, 70%, 52%);
+    }
     .selected{
         transition: 0.4s;
         border: solid 1px hsl(61, 70%, 52%);
@@ -174,6 +185,9 @@ button {
       border-radius: 50px;
       background-color: hsl(61, 70%, 52%);
       border: none;
+    }
+    .submitBTN:hover{
+      background-color: hsla(61, 70%, 52%, 0.692);
     }
     .rightWing{
       width: 100%;

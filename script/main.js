@@ -69,6 +69,47 @@ document.querySelectorAll('div[class="type-select"]').forEach((div) => {
     div.classList.add('selected');
   });
 });
+
+//focust inputs
+
+document.getElementById('Mortgage-Amount').addEventListener('focus', function() {
+  document.getElementById('BOX-Mortgage-Amount').classList.add('active');
+  document.querySelector('.mark').classList.add('mark-active');
+});
+
+document.getElementById('Mortgage-Amount').addEventListener('blur', function() {
+  document.getElementById('BOX-Mortgage-Amount').classList.remove('active');
+  document.querySelector('.mark').classList.remove('mark-active');
+});
+
+document.getElementById('term').addEventListener('focus', function() {
+  document.getElementById('BOX-term').classList.add('active');
+  document.querySelector('.mark-rev').classList.add('mark-active');
+});
+
+document.getElementById('term').addEventListener('blur', function() {
+  document.getElementById('BOX-term').classList.remove('active');
+  document.querySelector('.mark-rev').classList.remove('mark-active');
+});
+
+document.getElementById('intere').addEventListener('focus', function() {
+  document.getElementById('BOX-intere').classList.add('active');
+  document.querySelector('.mark-rev').classList.add('mark-active');
+});
+
+document.getElementById('intere').addEventListener('blur', function() {
+  document.getElementById('BOX-intere').classList.remove('active');
+  document.querySelector('.mark-rev').classList.remove('mark-active');
+});
+
+document.getElementsByName('type').addEventListener('mouseover', function() {
+  document.getElementById('type-select').classList.add('active');
+});
+
+document.getElementById('type').addEventListener('mouseout', function() {
+  document.getElementById('type-select').classList.remove('active');
+});
+//focus inputs
 document.getElementById('submitBTN').addEventListener('click', (event) => {
   let valid = true;
   event.preventDefault();

@@ -279,7 +279,6 @@ button {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-items: center;
       border-radius: 20px;
       width: 80%;
       background-color: hsl(0, 0%, 100%);

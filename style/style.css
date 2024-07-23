@@ -280,7 +280,7 @@ button {
       flex-direction: row;
       justify-content: center;
       border-radius: 20px;
-      width: 85%;
+      width: 80%;
       background-color: hsl(0, 0%, 100%);
     }
     h1{
@@ -319,6 +319,7 @@ button {
     gap: 30px;
   }
   .rightWing {
+      flex: 1;
       width: 50%;
       min-height: 700px;
       background-color: hsl(201, 30%, 22%);
@@ -367,9 +368,8 @@ button {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-items: center;
       border-radius: 20px;
-      width: 60%;
+      width: 70%;
       background-color: hsl(0, 0%, 100%);
     }
     h1{
@@ -408,6 +408,7 @@ button {
     gap: 30px;
   }
   .rightWing {
+      flex:1;
       width: 50%;
       min-height: 700px;
       background-color: hsl(201, 30%, 22%);

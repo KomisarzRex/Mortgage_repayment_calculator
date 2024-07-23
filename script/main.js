@@ -94,12 +94,12 @@ document.getElementById('term').addEventListener('blur', function() {
 
 document.getElementById('intere').addEventListener('focus', function() {
   document.getElementById('BOX-intere').classList.add('active');
-  document.querySelector('.mark-rev').classList.add('mark-active');
+  document.getElementById('BOX-intere').querySelector('.mark-rev').classList.add('mark-active');
 });
 
 document.getElementById('intere').addEventListener('blur', function() {
   document.getElementById('BOX-intere').classList.remove('active');
-  document.querySelector('.mark-rev').classList.remove('mark-active');
+  document.getElementById('BOX-intere').querySelector('.mark-rev').classList.remove('mark-active');
 });
 //focus inputs
 document.getElementById('submitBTN').addEventListener('click', (event) => {
